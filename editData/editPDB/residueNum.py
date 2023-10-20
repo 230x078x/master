@@ -1,4 +1,4 @@
-with open("../dat/dock/dock2/1brs.pdb", "r") as f:
+with open("./../../1BRS/1brs_sep.pdb", "r") as f:
     lines = f.readlines()
 
 new_lines = []
@@ -11,5 +11,5 @@ for i, line in enumerate(lines):
     else:
         new_lines.append(line)
 
-with open("../dat/dock/dock2/1brs_new.pdb", "w") as f:
+with open("./../../1BRS/1brs_sep_new.pdb", "w") as f:
     f.writelines(new_lines)
